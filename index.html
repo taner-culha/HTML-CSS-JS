@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Time Page Refresh -->
+    <meta http-equiv="refresh" content="30">
+    <!-- Time Page Redirect -->
+    <meta http-equiv="refresh" content="30;http://www.tanerculha.com">
+    <title>HTML</title>
+</head>
+<!-- Disable Right Clicking Body(Prevent right clicking the entire web page)-->
+<body oncontextmenu="return false"> 
+    <!-- Add Voice Recognition -->
+    <input type="text" x-webkit-spech/>
+    <p></p>
+
+    <!-- Disable Right Clicking (Prevent right clicking a specific element)-->
+    <section oncontextmenu="return false">Right Clicking</section>
+    <p></p>
+
+    <!-- Add Color Picker -->
+    <b>Color picker in input field:</b>
+    <input type="color">
+    <p></p>
+    
+    <!-- Capturing The User's Camera -->
+    <!-- Opens back facing camera to take a video -->
+    <input type="file" capture="environment" accept="video/*"><p></p>
+    <!-- Opens back facing camera to take a video -->
+    <input type="file" capture="user" accept="image/*"><p></p>
+
+    <!-- Disable Right Clicking Script(Prevent right clicking the entire web page)-->
+    <script>
+        window.oncontextmenu = function () {
+         return false;
+        }
+        document.onkeydown = function (e) {
+          if (window.event.keyCode == 123 ||  e.button==2)
+          return false;
+        }
+    </script> 
+</body>
+</html>
