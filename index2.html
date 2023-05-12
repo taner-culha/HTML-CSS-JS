@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            display:flex;
+            flex-wrap: wrap-reverse;
+        }
+        .card > .item{
+            flex: 1 0 10rem;
+        }
+        #container{
+            height: 100px;
+            background-color: goldenrod;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse;
+        }
+        .kutu1{
+            border: 1px solid black;
+            background: white;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="item">
+            <img src="bg.png" alt="" width="300" height="300">
+        </div>
+        <div class="item">
+            <div class="form-group">
+            E-Mail : <input type="text" name="" id=""><br>
+            Password : <input type="password" name="" id=""><br>
+            <input type="button" value="Login">
+            </div>
+        </div>
+    </div><p></p><hr>
+    <div id="container">
+        <div class="kutu1">Kutu 1</div>
+        <div class="kutu1">Kutu 2</div>
+        <div class="kutu1">Kutu 3</div>
+    </div><p></p><hr>
+<!--Difference between "P" and "Pre"-->
+    <p> 
+        (p)Hello World
+    </p>
+    <pre>
+        (pre)Hello 
+        World
+    </pre><p></p><hr>
+</body>
+</html>
