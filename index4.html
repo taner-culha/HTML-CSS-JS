@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+    --pencil-green: red;
+    --pencil-dark: white;
+    --body-bg: #010001;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--body-bg);
+    color: white;
+    font-size: 1.5rem;
+}
+.pencil {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    transform-origin: center;
+    transform: rotate(135deg);
+    animation: pencil-animation 10s infinite;
+}
+ .pencil_ball-point {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--pencil-green);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.pencil_cap {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(20% 40%, 100% 0%, 100% 100%, 20% 60%);
+    background: var(--pencil-dark);
+    width: 12%;
+    height: 100%;
+}
+.pencil_cap-base {
+    position: absolute;
+    left: 12%;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: var(--pencil-dark);
+}
+.pencil_middle {
+    position: absolute;
+    left: calc(12% + 20px);
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: var(--pencil-green);
+}
+.pencil_eraser {
+    position: absolute;
+    left: calc(12% + 70% + 20px);
+    top: 0;
+    height: 100%;
+    width: 11%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--pencil-dark);
+}
+.line {
+    position: relative;
+    top: 80px;
+    right: 103px;
+    height: 10px;
+    width: 1000px;
+    z-index: -1;
+    background: var(--pencil-green);
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: line-animation 10s infinite;
+}
+@keyframes pencil-animation {
+    0% {
+        transform: rotate(135deg);
+    }
+    20% {
+        transform: rotate(315deg);
+    }
+    45% {
+        transform: translateX(300px) rotate(315deg);
+    }
+    55% {
+        transform: translateX(300px) rotate(495deg);
+    }
+    100% {
+        transform: rotate(495deg);
+    }  
+}
+@keyframes line-animation {
+    20% {
+        transform: scaleX(0);
+    }
+    45% {
+        transform: scaleX(0.6);
+    }
+    55% {
+        transform: scaleX(0.6);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="pencil">
+        <div class="pencil_ball-point"></div>
+        <div class="pencil_cap"></div>
+        <div class="pencil_cap-base"></div>
+        <div class="pencil_middle"></div>
+        <div class="pencil_eraser"></div>
+    </div>
+    <div class="line"></div>
+</body>
+</html>
