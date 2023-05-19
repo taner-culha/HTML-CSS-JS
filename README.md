@@ -1,5 +1,8 @@
 # HTML-CSS-JS
-HTML-CSS-JS  Useful Tips
+HTML-CSS-JS Basic Useful Tips
+<p>
+index5.html<br>
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index5.png" alt="img" width="320" height="180">
 <p>
 index4.html<br>
 <img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index4.png" alt="img" width="320" height="180">
