@@ -2,7 +2,7 @@
 HTML-CSS-JS Basic Useful Tips
 <p>
 index7.html<br>
-<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index7.png" alt="img" width="300" height="200">
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index7.png" alt="img" width="200" height="200">
 <p>
 index6.html<br>
 <img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index6.png" alt="img" width="300" height="200">
