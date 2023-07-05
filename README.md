@@ -1,6 +1,12 @@
 # HTML-CSS-JS
 HTML-CSS-JS Basic Useful Tips
 <p>
+index10.html<br>
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index10.png" alt="img" width="300" height="300">
+<p>
+index9.html<br>
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index9.png" alt="img" width="300" height="300">
+<p>
 index8.html<br>
 <img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index8.png" alt="img" width="300" height="300">
 <p>
