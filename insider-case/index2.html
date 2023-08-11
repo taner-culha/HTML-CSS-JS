@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Insider </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+  <style>
+    img{
+      width: 50%;
+      height : auto;
+    }
+  </style>
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" id="veri-oku">Veri Çek</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>URL</th>
+                      <th>Img</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="liste">
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       const btnCek=document.querySelector("#veri-oku");
+       const tbListe=document.querySelector("#liste");
+        btnCek.addEventListener("click",function(){
+            return fetch("https://opt-interview-projects.onrender.com/smart-recommender")
+                .then(cevap => cevap.json())
+                .then(veri => {
+                    tbListe.innerHTML="";//tabloyu boşalt
+                    veri.forEach(function(element,index){
+                        const satir = document.createElement("tr");
+                        const hucre1 = document.createElement("td");
+                        const hucre2 = document.createElement("td");
+                        const hucre3 = document.createElement("td");
+                        const hucre4 = document.createElement("td");
+                        const hucre5 = document.createElement("td");
+ 
+                        hucre1.innerHTML=element.id
+                        hucre2.innerHTML=element.name
+                        hucre3.innerHTML=element.url
+                        hucre4.innerHTML="<img src=\""+element.img+"\" ;/>"
+                        hucre5.innerHTML=element.price + " TL"
+ 
+                        satir.appendChild(hucre1)
+                        satir.appendChild(hucre2)
+                        satir.appendChild(hucre3)
+                        satir.appendChild(hucre4)
+                        satir.appendChild(hucre5)
+ 
+                        tbListe.appendChild(satir)
+                    });
+ 
+                });
+        });
+    </script>
+ 
+</body>
+</html>

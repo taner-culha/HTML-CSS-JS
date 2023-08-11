@@ -1,6 +1,12 @@
 # HTML-CSS-JS
 HTML-CSS-JS Basic Useful Tips
 <p>
+insider-case folder (index2.html)<br>
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/veri-cek.png" alt="img" width="300" height="300">
+<p>
+insider-case folder (index.html)<br>
+<img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/rastgele-veri-cek.png" alt="img" width="300" height="300">
+<p>
 index10.html<br>
 <img src="https://github.com/taner-culha/HTML-CSS-JS/blob/main/index10.png" alt="img" width="300" height="300">
 <p>

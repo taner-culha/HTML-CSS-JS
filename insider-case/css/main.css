@@ -1,0 +1,14 @@
+#box{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.content{
+    height: auto;
+    padding: 2%;
+    
+}
